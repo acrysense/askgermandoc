@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>AskGermanDoc - Авторизация</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body class="scroll-disabled">
+    <!-- auth -->
+    <div class="auth" id="auth">
+        <div class="container">
+            <div class="auth__wrapper">
+                <div class="auth__top">
+                    <a href="#" class="logotype auth__logotype">
+                        <img src="img/dist/logotype.png" alt="AskGermanDoc">
+                    </a>
+                </div>
+                <div class="auth__main">
+                    <div class="auth__inner">
+                        <h2 class="auth__title">Eingang</h2>
+                        <a href="#" class="auth__link">Anmeldung</a>
+                    </div>
+                    <form action="#" class="auth-form auth__form">
+                        <div class="input-control auth-form__group"> <!-- add class 'input-control--error' for visible error message -->
+                            <span class="input-control__help">Handynummer</span>
+                            <input type="email" class="input-control__input">
+                            <span class="input-control__error">Error</span>
+                        </div>
+                        <div class="input-control auth-form__group"> <!-- add class 'input-control--error' for visible error message -->
+                            <span class="input-control__help">Passwort</span>
+                            <input type="password" class="input-control__input">
+                            <span class="input-control__error">Error</span>
+                        </div>
+                        <div class="auth-form__bottom">
+                            <button class="auth-form__btn btn" disabled>Betreten</button>
+                            <a href="#" class="auth-form__help">Passwort vergessen?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="auth__bottom">
+                    <a href="index.html" class="auth__back">
+                        <svg class="auth__back-icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-arrow-left"></use>
+                        </svg>
+                        <span>Zurück nach Hause</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of auth -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

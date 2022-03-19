@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>AskGermanDoc - Профиль врача</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header header--shadow" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html" class="logotype header__logotype">
+                    <img src="img/dist/logotype.png" alt="AskGermanDoc">
+                </a>
+                <div class="header__inner">
+                    <nav class="nav header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="specialists.html" class="nav__link">Специалисты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="how-it-works.html" class="nav__link">Как это работает</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Что такое второе мнение</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__group">
+                        <a href="#" class="header__link">Login</a>
+                        <a href="#" class="header__auth auth-btn">Регистрация</a>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="container">
+            <div class="mobile-menu__wrapper">
+                <nav class="nav mobile-menu__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item--active">
+                            <a href="#" class="nav__link">Специалисты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Как это работает</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Что такое второе мнение</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__group">
+                    <a href="#" class="mobile-menu__auth auth-btn">Регистрация</a>
+                    <a href="#" class="mobile-menu__link">Login</a>
+                </div>
+                <ul class="c-socials mobile-menu__socials">
+                    <li class="c-socials__item">
+                        <a href="#" class="c-socials__link">
+                            <svg class="c-socials__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="c-socials__item">
+                        <a href="#" class="c-socials__link">
+                            <svg class="c-socials__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="c-socials__item">
+                        <a href="#" class="c-socials__link">
+                            <svg class="c-socials__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end of mobile menu -->
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- profile doctor -->
+        <div class="profile-doctor" id="profile-doctor">
+            <div class="container">
+                <div class="profile-doctor__wrapper profile-doctor__wrapper--flex">
+                    <div class="profile-doctor__left">
+                        <picture class="profile-doctor__img">
+                            <img src="img/dist/doctor-01.png" alt="Image">
+                        </picture>
+                        <a href="#" class="profile-doctor__btn round-btn">Письменное второе мнение - <span>249 €</span></a>
+                        <a href="#" class="profile-doctor__btn round-btn round-btn--dark">Видеоконсультация - <span>449 €</span></a>
+                    </div>
+                    <div class="profile-doctor__right">
+                        <div class="profile-doctor__block">
+                            <h2 class="profile-doctor__title">Антон Мортиц</h2>
+                            <div class="profile-doctor__group">
+                                <span class="profile-doctor__help">научная степень:</span>
+                                <h3 class="profile-doctor__subtitle">Профессор, доктор медицинских наук</h3>
+                            </div>
+                        </div>
+                        <div class="profile-doctor__block">
+                            <div class="profile-doctor__group">
+                                <span class="profile-doctor__help">направление:</span>
+                                <h3 class="profile-doctor__subtitle profile-doctor__subtitle--accent">Кардиохирургия и сосудистая хирургия</h3>
+                            </div>
+                        </div>
+                        <div class="profile-doctor__block">
+                            <div class="profile-doctor__group">
+                                <span class="profile-doctor__help">должность:</span>
+                                <h3 class="profile-doctor__subtitle">Директор клиники торакальной и сердечно-сосудистой хирургии при университете Йогана Вальфгана фон Гёте в Франкфурте</h3>
+                            </div>
+                        </div>
+                        <div class="profile-doctor__block">
+                            <div class="profile-doctor__group">
+                                <span class="profile-doctor__help">основные направления лечения:</span>
+                                <div class="profile-doctor__inner">
+                                    <div class="profile-doctor__stack">
+                                        <h3 class="profile-doctor__subtitle">Коронарное шунтирование</h3>
+                                        <p class="profile-doctor__text">Протезирование, реконструкция</p>
+                                    </div>
+                                    <div class="profile-doctor__stack">
+                                        <h3 class="profile-doctor__subtitle">Хирургия сердечных клапанов</h3>
+                                        <p class="profile-doctor__text">Протезирование, реконструкция</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="profile-doctor__more">Показать ещё...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-doctor__wrapper">
+                    <div class="tabs">
+                        <ul class="tabs__list">
+                            <li class="tabs__item tabs__item--active">
+                                <button class="tabs__tab">Биография</button>
+                            </li>
+                            <li class="tabs__item">
+                                <button class="tabs__tab">Научные направления</button>
+                            </li>
+                        </ul>
+                        <div class="tabs__wrapper tabs__wrapper--active">
+                            <div class="content tabs__content">
+                                <h3>Nullam dictum felis eu pede mollis pretium. Donec vitae sapien ut libero venenatis faucibus.</h3>
+                                <p>
+                                    Vestibulum eu odio. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Curabitur ullamcorper ultricies nisi. Nulla facilisi. Aenean ut eros et nisl sagittis vestibulum.
+                                    <br><br>
+                                    Phasellus a est. Ut varius tincidunt libero. Nam eget dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Phasellus dolor.
+                                    <br><br>
+                                    Nullam accumsan lorem in dui. Duis leo. Nam at tortor in tellus interdum sagittis. Duis lobortis massa imperdiet quam. Donec id justo.
+                                    <br><br>
+                                    Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Praesent venenatis metus at tortor pulvinar varius. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Nam commodo suscipit quam. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.
+                                    <br><br>
+                                    Aenean ut eros et nisl sagittis vestibulum. Phasellus blandit leo ut odio. Etiam vitae tortor. Curabitur at lacus ac velit ornare lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                                </p>
+                                <h3>Nullam dictum felis eu pede mollis pretium. Donec vitae sapien ut libero venenatis faucibus.</h3>
+                                <ul>
+                                    <li>Vestibulum eu odio. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Curabitur ullamcorper ultricies nisi. Nulla facilisi. Aenean ut eros et nisl sagittis vestibulum.</li>
+                                    <li>Phasellus a est. Ut varius tincidunt libero. Nam eget dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Phasellus dolor.</li>
+                                    <li> Nullam accumsan lorem in dui. Duis leo. Nam at tortor in tellus interdum sagittis. Duis lobortis massa imperdiet quam. Donec id justo.</li>
+                                    <li>Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Praesent venenatis metus at tortor pulvinar varius. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Nam commodo suscipit quam. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</li>
+                                    <li>Aenean ut eros et nisl sagittis vestibulum. Phasellus blandit leo ut odio. Etiam vitae tortor. Curabitur at lacus ac velit ornare lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
+                                </ul>
+                                <h3 class="accent-color">Nullam dictum felis eu pede mollis pretium. Donec vitae sapien ut libero venenatis faucibus.</h3>
+                                <ul>
+                                    <li>Vestibulum eu odio. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Curabitur ullamcorper ultricies nisi. Nulla facilisi. Aenean ut eros et nisl sagittis vestibulum.</li>
+                                    <li>Phasellus a est. Ut varius tincidunt libero. Nam eget dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Phasellus dolor.</li>
+                                    <li> Nullam accumsan lorem in dui. Duis leo. Nam at tortor in tellus interdum sagittis. Duis lobortis massa imperdiet quam. Donec id justo.</li>
+                                    <li>Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Praesent venenatis metus at tortor pulvinar varius. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Nam commodo suscipit quam. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</li>
+                                    <li>Aenean ut eros et nisl sagittis vestibulum. Phasellus blandit leo ut odio. Etiam vitae tortor. Curabitur at lacus ac velit ornare lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tabs__wrapper">
+                            <div class="content tabs__content">
+                                <h3 class="accent-color">Nullam dictum felis eu pede mollis pretium. Donec vitae sapien ut libero venenatis faucibus.</h3>
+                                <ul>
+                                    <li>Vestibulum eu odio. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Curabitur ullamcorper ultricies nisi. Nulla facilisi. Aenean ut eros et nisl sagittis vestibulum.</li>
+                                    <li>Phasellus a est. Ut varius tincidunt libero. Nam eget dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Phasellus dolor.</li>
+                                    <li> Nullam accumsan lorem in dui. Duis leo. Nam at tortor in tellus interdum sagittis. Duis lobortis massa imperdiet quam. Donec id justo.</li>
+                                    <li>Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Praesent venenatis metus at tortor pulvinar varius. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Nam commodo suscipit quam. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</li>
+                                    <li>Aenean ut eros et nisl sagittis vestibulum. Phasellus blandit leo ut odio. Etiam vitae tortor. Curabitur at lacus ac velit ornare lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
+                                </ul>
+                                <h3>Nullam dictum felis eu pede mollis pretium. Donec vitae sapien ut libero venenatis faucibus.</h3>
+                                <p>
+                                    Vestibulum eu odio. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Curabitur ullamcorper ultricies nisi. Nulla facilisi. Aenean ut eros et nisl sagittis vestibulum.
+                                    <br><br>
+                                    Phasellus a est. Ut varius tincidunt libero. Nam eget dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Phasellus dolor.
+                                    <br><br>
+                                    Nullam accumsan lorem in dui. Duis leo. Nam at tortor in tellus interdum sagittis. Duis lobortis massa imperdiet quam. Donec id justo.
+                                    <br><br>
+                                    Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Praesent venenatis metus at tortor pulvinar varius. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Nam commodo suscipit quam. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.
+                                    <br><br>
+                                    Aenean ut eros et nisl sagittis vestibulum. Phasellus blandit leo ut odio. Etiam vitae tortor. Curabitur at lacus ac velit ornare lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                                </p>
+                                <h3>Nullam dictum felis eu pede mollis pretium. Donec vitae sapien ut libero venenatis faucibus.</h3>
+                                <ul>
+                                    <li>Vestibulum eu odio. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Curabitur ullamcorper ultricies nisi. Nulla facilisi. Aenean ut eros et nisl sagittis vestibulum.</li>
+                                    <li>Phasellus a est. Ut varius tincidunt libero. Nam eget dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Phasellus dolor.</li>
+                                    <li> Nullam accumsan lorem in dui. Duis leo. Nam at tortor in tellus interdum sagittis. Duis lobortis massa imperdiet quam. Donec id justo.</li>
+                                    <li>Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi. Praesent venenatis metus at tortor pulvinar varius. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Nam commodo suscipit quam. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</li>
+                                    <li>Aenean ut eros et nisl sagittis vestibulum. Phasellus blandit leo ut odio. Etiam vitae tortor. Curabitur at lacus ac velit ornare lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-doctor__wrapper doctors profile-doctor__doctors">
+                    <h3 class="profile-doctor__heading">Похожие врачи</h3>
+                    <div class="doctors__wrapper">
+                        <a href="doctor.html" class="doctors__item">
+                            <picture class="doctors__img">
+                                <img src="img/dist/doctor-01.png" alt="Doctor">
+                            </picture>
+                            <div class="doctors__body">
+                                <div class="doctors__inner">
+                                    <h3 class="doctors__title">Dr. Nick Sims</h3>
+                                    <span class="doctors__help">о враче</span>
+                                </div>
+                                <span class="doctors__position">Кардиолог</span>
+                            </div>
+                        </a>
+                        <a href="doctor.html" class="doctors__item">
+                            <picture class="doctors__img">
+                                <img src="img/dist/doctor-01.png" alt="Doctor">
+                            </picture>
+                            <div class="doctors__body">
+                                <div class="doctors__inner">
+                                    <h3 class="doctors__title">Dr. Nick Sims</h3>
+                                    <span class="doctors__help">о враче</span>
+                                </div>
+                                <span class="doctors__position">Кардиолог</span>
+                            </div>
+                        </a>
+                        <a href="doctor.html" class="doctors__item">
+                            <picture class="doctors__img">
+                                <img src="img/dist/doctor-01.png" alt="Doctor">
+                            </picture>
+                            <div class="doctors__body">
+                                <div class="doctors__inner">
+                                    <h3 class="doctors__title">Dr. Nick Sims</h3>
+                                    <span class="doctors__help">о враче</span>
+                                </div>
+                                <span class="doctors__position">Кардиолог</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-doctor__wrapper">
+                    <div class="c-consultation">
+                        <h3 class="c-consultation__title">Стоимость консультации:</h3>
+                        <div class="c-consultation__group">
+                            <a href="#" class="c-consultation__btn round-btn">Письменное второе мнение -  <span>449 €</span></a>
+                            <a href="#" class="c-consultation__btn round-btn round-btn--transparent">Писменное второе мнение  -  <span>249 €</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of profile doctor -->
+    </div>
+    <!-- end of wrapper -->
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="footer__main">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__block">
+                        <a href="index.html" class="logotype footer__logotype">
+                            <img src="img/dist/logotype-white.png" alt="AskGermanDoc">
+                        </a>
+                        <ul class="c-socials footer__socials">
+                            <li class="c-socials__item">
+                                <a href="#" class="c-socials__link">
+                                    <svg class="c-socials__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="c-socials__item">
+                                <a href="#" class="c-socials__link">
+                                    <svg class="c-socials__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="c-socials__item">
+                                <a href="#" class="c-socials__link">
+                                    <svg class="c-socials__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__block footer__block--desktop">
+                        <h3 class="footer__heading">Приложение AskGermanDoc</h3>
+                        <div class="content footer__content">
+                            <p>
+                                Консультация врача, рецепт и больничный в считанные минуты через приложение.<br> 
+                                В любое время и в любом месте.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__block footer__block--desktop">
+                        <h3 class="footer__heading">Контакты и помощь</h3>
+                        <ul class="c-contacts footer__contacts">
+                            <li class="c-contacts__item">
+                                <a href="#" class="c-contacts__link">
+                                    <svg class="c-contacts__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-help"></use>
+                                    </svg>
+                                    <span>Помощь</span>
+                                </a>
+                            </li>
+                            <li class="c-contacts__item">
+                                <a href="#" class="c-contacts__link">
+                                    <svg class="c-contacts__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    <span>Платформа</span>
+                                </a>
+                            </li>
+                            <li class="c-contacts__item">
+                                <a href="#" class="c-contacts__link">
+                                    <svg class="c-contacts__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-email"></use>
+                                    </svg>
+                                    <span>Электронная почта</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__block">
+                        <h3 class="footer__heading">Допущение затрат</h3>
+                        <div class="content footer__content">
+                            <p>Ваша медицинская страховая компания покроет расходы на посещение вашего онлайн-врача.</p>
+                        </div>
+                        <a href="#" class="footer__btn btn">Узнать больше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__wrapper footer__wrapper--center">
+                    <p class="footer__copyright">© 2021 AskGermanDoc.com.  Все права защищены</p>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Пользовательское соглашение</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

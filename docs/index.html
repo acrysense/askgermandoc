@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>AskGermanDoc - Главная</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html" class="logotype header__logotype">
+                    <img src="img/dist/logotype.png" alt="AskGermanDoc">
+                </a>
+                <div class="header__inner">
+                    <nav class="nav header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="specialists.html" class="nav__link">Специалисты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="how-it-works.html" class="nav__link">Как это работает</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Что такое второе мнение</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__group">
+                        <a href="#" class="header__link">Login</a>
+                        <a href="#" class="header__auth auth-btn">Регистрация</a>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="container">
+            <div class="mobile-menu__wrapper">
+                <nav class="nav mobile-menu__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item--active">
+                            <a href="#" class="nav__link">Специалисты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Как это работает</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Что такое второе мнение</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__group">
+                    <a href="#" class="mobile-menu__auth auth-btn">Регистрация</a>
+                    <a href="#" class="mobile-menu__link">Login</a>
+                </div>
+                <ul class="c-socials mobile-menu__socials">
+                    <li class="c-socials__item">
+                        <a href="#" class="c-socials__link">
+                            <svg class="c-socials__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="c-socials__item">
+                        <a href="#" class="c-socials__link">
+                            <svg class="c-socials__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="c-socials__item">
+                        <a href="#" class="c-socials__link">
+                            <svg class="c-socials__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end of mobile menu -->
+    <!-- main -->
+    <section class="main" id="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <div class="main__offer">
+                    <h2 class="main__title">Прощай, зал ожидания.<br>
+                        Здравствуйте, онлайн-доктор.</h2>
+                    <p class="main__description">Консультация врача, индивидуальный
+                        рецепт и больничный за считанные минуты. *</p>
+                    <a href="#" class="main__btn btn">Выберите лечение</a>
+                </div>
+                <div class="main__image">
+                    <picture class="main__img">
+                        <img src="img/dist/main-img.png" alt="Image">
+                    </picture>
+                </div>
+            </div>
+            <div class="main__info">
+                <ul class="c-raiting main__raiting">
+                    <li class="c-raiting__item">
+                        <svg class="c-raiting__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-star"></use>
+                        </svg>
+                    </li>
+                    <li class="c-raiting__item">
+                        <svg class="c-raiting__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-star"></use>
+                        </svg>
+                    </li>
+                    <li class="c-raiting__item">
+                        <svg class="c-raiting__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-star"></use>
+                        </svg>
+                    </li>
+                    <li class="c-raiting__item">
+                        <svg class="c-raiting__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-star"></use>
+                        </svg>
+                    </li>
+                    <li class="c-raiting__item">
+                        <svg class="c-raiting__icon">
+                            <use xlink:href="img/dist/sprite.svg#icon-star"></use>
+                        </svg>
+                    </li>
+                </ul>
+                <span class="main__help">Более 1000 позитивных отзывов</span>
+            </div>
+        </div>
+    </section>
+    <!-- end of main -->
+    <!-- doctors -->
+    <section class="doctors" id="doctors">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="section-heading__title">Список врачей</h2>
+                <p class="section-heading__description">Praesent nonummy mi in odio. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In turpis. Vivamus consectetuer hendrerit lacus.</p>
+            </div>
+            <div class="doctors__wrapper">
+                <a href="doctor.html" class="doctors__item">
+                    <picture class="doctors__img">
+                        <img src="img/dist/doctor-01.png" alt="Doctor">
+                    </picture>
+                    <div class="doctors__body">
+                        <div class="doctors__inner">
+                            <h3 class="doctors__title">Dr. Nick Sims</h3>
+                            <span class="doctors__help">о враче</span>
+                        </div>
+                        <span class="doctors__position">Кардиолог</span>
+                    </div>
+                </a>
+                <a href="doctor.html" class="doctors__item">
+                    <picture class="doctors__img">
+                        <img src="img/dist/doctor-02.png" alt="Doctor">
+                    </picture>
+                    <div class="doctors__body">
+                        <div class="doctors__inner">
+                            <h3 class="doctors__title">Dr. Nick Sims</h3>
+                            <span class="doctors__help">о враче</span>
+                        </div>
+                        <span class="doctors__position">Кардиолог</span>
+                    </div>
+                </a>
+                <a href="doctor.html" class="doctors__item">
+                    <picture class="doctors__img">
+                        <img src="img/dist/doctor-03.png" alt="Doctor">
+                    </picture>
+                    <div class="doctors__body">
+                        <div class="doctors__inner">
+                            <h3 class="doctors__title">Dr. Nick Sims</h3>
+                            <span class="doctors__help">о враче</span>
+                        </div>
+                        <span class="doctors__position">Кардиолог</span>
+                    </div>
+                </a>
+                <a href="doctor.html" class="doctors__item">
+                    <picture class="doctors__img">
+                        <img src="img/dist/doctor-04.png" alt="Doctor">
+                    </picture>
+                    <div class="doctors__body">
+                        <div class="doctors__inner">
+                            <h3 class="doctors__title">Dr. Nick Sims</h3>
+                            <span class="doctors__help">о враче</span>
+                        </div>
+                        <span class="doctors__position">Кардиолог</span>
+                    </div>
+                </a>
+                <a href="doctor.html" class="doctors__item">
+                    <picture class="doctors__img">
+                        <img src="img/dist/doctor-04.png" alt="Doctor">
+                    </picture>
+                    <div class="doctors__body">
+                        <div class="doctors__inner">
+                            <h3 class="doctors__title">Dr. Nick Sims</h3>
+                            <span class="doctors__help">о враче</span>
+                        </div>
+                        <span class="doctors__position">Кардиолог</span>
+                    </div>
+                </a>
+                <a href="doctor.html" class="doctors__item">
+                    <picture class="doctors__img">
+                        <img src="img/dist/doctor-01.png" alt="Doctor">
+                    </picture>
+                    <div class="doctors__body">
+                        <div class="doctors__inner">
+                            <h3 class="doctors__title">Dr. Nick Sims</h3>
+                            <span class="doctors__help">о враче</span>
+                        </div>
+                        <span class="doctors__position">Кардиолог</span>
+                    </div>
+                </a>
+                <a href="doctor.html" class="doctors__item">
+                    <picture class="doctors__img">
+                        <img src="img/dist/doctor-02.png" alt="Doctor">
+                    </picture>
+                    <div class="doctors__body">
+                        <div class="doctors__inner">
+                            <h3 class="doctors__title">Dr. Nick Sims</h3>
+                            <span class="doctors__help">о враче</span>
+                        </div>
+                        <span class="doctors__position">Кардиолог</span>
+                    </div>
+                </a>
+                <a href="doctor.html" class="doctors__item">
+                    <picture class="doctors__img">
+                        <img src="img/dist/doctor-03.png" alt="Doctor">
+                    </picture>
+                    <div class="doctors__body">
+                        <div class="doctors__inner">
+                            <h3 class="doctors__title">Dr. Nick Sims</h3>
+                            <span class="doctors__help">о враче</span>
+                        </div>
+                        <span class="doctors__position">Кардиолог</span>
+                    </div>
+                </a>
+            </div>
+            <a href="#" class="doctors__btn btn">Все врачи</a>
+        </div>
+    </section>
+    <!-- end of doctors -->
+    <!-- how it works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="section-heading__title">Как это работает</h2>
+                <p class="section-heading__description">Praesent nonummy mi in odio. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In turpis. Vivamus consectetuer hendrerit lacus.</p>
+            </div>
+            <div class="how-it-works__wrapper">
+                <div class="how-it-works__item">
+                    <picture class="how-it-works__img">
+                        <img src="img/dist/how-it-works-01.png" alt="Запишитесь на прием">
+                    </picture>
+                    <h3 class="how-it-works__title">Запишитесь на прием</h3>
+                    <p class="how-it-works__description">Запустите приложение и укажите причину лечения. 
+                        Затем выберите подходящую для вас встречу.</p>
+                </div>
+                <div class="how-it-works__item">
+                    <picture class="how-it-works__img">
+                        <img src="img/dist/how-it-works-02.png" alt="Обратитесь к врачу по видео">
+                    </picture>
+                    <h3 class="how-it-works__title">Обратитесь к врачу по видео</h3>
+                    <p class="how-it-works__description">Лицензированный в Германии специалист позвонит вам через приложение и начнет консультацию.</p>
+                </div>
+                <div class="how-it-works__item">
+                    <picture class="how-it-works__img">
+                        <img src="img/dist/how-it-works-03.png" alt="Получите рецепт и больничный">
+                    </picture>
+                    <h3 class="how-it-works__title">Получите рецепт и больничный</h3>
+                    <p class="how-it-works__description">Вы можете найти рецепты, больничные листы и направления к другим специалистам в 
+                        приложении после приема.</p>
+                </div>
+            </div>
+            <a href="#" class="how-it-works__btn btn">Выберите лечение</a>
+        </div>
+    </section>
+    <!-- end of how it works -->
+    <!-- services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="section-heading__title">Наши услуги</h2>
+                <p class="section-heading__description">Praesent nonummy mi in odio. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In turpis. Vivamus consectetuer hendrerit lacus.</p>
+            </div>
+            <div class="services__wrapper">
+                <a href="#" class="services__item">
+                    <picture class="services__img">
+                        <img src="img/dist/services-01.png" alt="Запись к врачу онлайн">
+                    </picture>
+                    <div class="services__body">
+                        <span class="services__title">Запись к врачу онлайн</span>
+                    </div>
+                </a>
+                <a href="#" class="services__item">
+                    <picture class="services__img">
+                        <img src="img/dist/services-02.png" alt="Цифровой частный рецепт">
+                    </picture>
+                    <div class="services__body">
+                        <span class="services__title">Цифровой частный рецепт</span>
+                    </div>
+                </a>
+                <a href="#" class="services__item">
+                    <picture class="services__img">
+                        <img src="img/dist/services-03.png" alt="Доставка лекарств">
+                    </picture>
+                    <div class="services__body">
+                        <span class="services__title">Доставка лекарств</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end of services -->
+    <!-- promo -->
+    <section class="promo" id="promo">
+        <div class="container">
+            <div class="promo__wrapper">
+                <picture class="promo__img">
+                    <img src="img/dist/promo-img.png" alt="Promo">
+                </picture>
+                <div class="promo__body">
+                    <picture class="logotype promo__logotype">
+                        <img src="img/dist/logotype.png" alt="AskGermanDoc">
+                    </picture>
+                    <div class="content promo__content">
+                        <p>Каждый день мы выступаем за мир, в котором пациенты могут получать первоклассную медицинскую помощь в любое время и в любом месте - от постановки диагноза до лечения. Наша цель - сделать доступ к врачу, аптеке и, следовательно, к лекарствам максимально простым и быстрым через нашу платформу. Исходя из этого видения, мы создаем ведущую платформу для онлайн-посещений врачей и, таким образом, создаем надежную первую точку контакта для решения проблем со здоровьем.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of promo -->
+    <!-- consultation -->
+    <section class="consultation" id="consultation">
+        <div class="container">
+            <div class="consultation__wrapper">
+                <div class="consultation__body">
+                    <h2 class="consultation__title">Консультация для вашего здоровья</h2>
+                    <p class="consultation__description">Консультация врача, рецепт и больничный за считанные минуты с приложением <a href="#">AskGermanDoc</a>.</p>
+                    <form action="#" class="consultation-form consultation__form">
+                        <input type="text" class="consultation-form__input" placeholder="Введите Ваше имя">
+                        <input type="text" class="consultation-form__input" id="consultation-phone" inputmode="tel">
+                        <button class="consultation-form__btn btn">Отправить заявку</button>
+                    </form>
+                </div>
+                <picture class="consultation__img">
+                    <img src="img/dist/consultation-img.png" alt="Image">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <!-- end of consultation -->
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="footer__main">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__block">
+                        <a href="index.html" class="logotype footer__logotype">
+                            <img src="img/dist/logotype-white.png" alt="AskGermanDoc">
+                        </a>
+                        <ul class="c-socials footer__socials">
+                            <li class="c-socials__item">
+                                <a href="#" class="c-socials__link">
+                                    <svg class="c-socials__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="c-socials__item">
+                                <a href="#" class="c-socials__link">
+                                    <svg class="c-socials__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="c-socials__item">
+                                <a href="#" class="c-socials__link">
+                                    <svg class="c-socials__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__block footer__block--desktop">
+                        <h3 class="footer__heading">Приложение AskGermanDoc</h3>
+                        <div class="content footer__content">
+                            <p>
+                                Консультация врача, рецепт и больничный в считанные минуты через приложение.<br> 
+                                В любое время и в любом месте.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__block footer__block--desktop">
+                        <h3 class="footer__heading">Контакты и помощь</h3>
+                        <ul class="c-contacts footer__contacts">
+                            <li class="c-contacts__item">
+                                <a href="#" class="c-contacts__link">
+                                    <svg class="c-contacts__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-help"></use>
+                                    </svg>
+                                    <span>Помощь</span>
+                                </a>
+                            </li>
+                            <li class="c-contacts__item">
+                                <a href="#" class="c-contacts__link">
+                                    <svg class="c-contacts__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    <span>Платформа</span>
+                                </a>
+                            </li>
+                            <li class="c-contacts__item">
+                                <a href="#" class="c-contacts__link">
+                                    <svg class="c-contacts__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-email"></use>
+                                    </svg>
+                                    <span>Электронная почта</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__block">
+                        <h3 class="footer__heading">Допущение затрат</h3>
+                        <div class="content footer__content">
+                            <p>Ваша медицинская страховая компания покроет расходы на посещение вашего онлайн-врача.</p>
+                        </div>
+                        <a href="#" class="footer__btn btn">Узнать больше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__wrapper footer__wrapper--center">
+                    <p class="footer__copyright">© 2021 AskGermanDoc.com.  Все права защищены</p>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Пользовательское соглашение</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
