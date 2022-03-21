@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>AskGermanDoc - Квитанция</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body class="scroll-disabled">
+    <!-- personal area -->
+    <div class="lk">
+        <div class="lk__wrap">
+            <div class="lk__overlay" id="lk-overlay"></div>
+            <div class="lk__left" id="lk-menu">
+                <div class="lk__topmenu">
+                    <button class="lk-close" id="lk-close" aria-label="Закрыть">
+                        <span class="lk-close__inner"></span>
+                        <span class="lk-close__inner"></span>
+                        <span class="lk-close__inner"></span>
+                    </button>
+                    <a href="#" class="logotype lk__logotype">
+                        <img src="img/dist/logotype-white.png" alt="AskGermanDoc">
+                    </a>
+                </div>
+                <div class="c-lk-profile lk__mobile-profile">
+                    <div class="c-lk-profile__group">
+                        <h3 class="c-lk-profile__name">Андрей Андреенко</h3>
+                        <a href="#" class="c-lk-profile__link">Админ</a>
+                    </div>
+                    <picture class="c-lk-profile__img">
+                        <img src="img/dist/sprite.svg#icon-user" alt="Image">
+                    </picture>
+                </div>
+                <nav class="lk-nav lk__nav">
+                    <ul class="lk-nav__list">
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="lk-patient.html" class="lk-nav__link">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-user"></use>
+                                    </svg>
+                                    <span>Личные данные</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="lk-patient-consultation.html" class="lk-nav__link lk-nav__link--notification">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-calendar"></use>
+                                    </svg>
+                                    <span>Консультации</span>
+                                </a>
+                                <ul class="lk-submenu lk-nav__submenu">
+                                    <li class="lk-submenu__item lk-submenu__item--active">
+                                        <a href="#" class="lk-submenu__link">
+                                            <span>23456 от 17.10.2021</span>
+                                            <svg class="lk-submenu__icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-video"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="lk-submenu__item">
+                                        <a href="#" class="lk-submenu__link">
+                                            <span>23456 от 17.10.2021</span>
+                                            <svg class="lk-submenu__icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-chat-fill"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="lk-submenu__item">
+                                        <a href="#" class="lk-submenu__link">
+                                            <span>23456 от 17.10.2021</span>
+                                            <svg class="lk-submenu__icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-chat-fill"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="#" class="lk-nav__link">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-chat"></use>
+                                    </svg>
+                                    <span>Чат с админом</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="lk-nav__item lk-nav__item--active">
+                            <div class="lk-nav__elem">
+                                <a href="lk-patient-tickets.html" class="lk-nav__link">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-ticket"></use>
+                                    </svg>
+                                    <span>Квитанции</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="lk-nav__list">
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="#" class="lk-nav__link">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-settings"></use>
+                                    </svg>
+                                    <span>Настройки профиля</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="#" class="lk-nav__link">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-exit"></use>
+                                    </svg>
+                                    <span>Выйти</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="lk__right">
+                <div class="lk__top lk__top--main">
+                    <div class="lk__group">
+                        <button class="lk-hamburger" id="lk-hamburger-toggle" aria-label="Меню">
+                            <span class="lk-hamburger__inner"></span>
+                            <span class="lk-hamburger__inner"></span>
+                            <span class="lk-hamburger__inner"></span>
+                        </button>
+                        <h1 class="lk__heading">Квитанция</h1>
+                    </div>
+                    <div class="c-lk-profile lk__profile">
+                        <div class="c-lk-profile__group">
+                            <h3 class="c-lk-profile__name">Кристина Ткаченко</h3>
+                            <a href="#" class="c-lk-profile__link">перейти в профиль</a>
+                        </div>
+                        <picture class="c-lk-profile__img">
+                            <img src="img/dist/sprite.svg#icon-user" alt="Image">
+                        </picture>
+                    </div>
+                </div>
+                <div class="lk__container">
+                    <div class="lk__inner">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__elem">Все квитанции</span>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__elem breadcrumbs__elem--grey">12.06.2021</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lk__main">
+                        <div class="lk-data">
+                            <div class="lk-data__wrapper">
+                                <div class="lk-data__main">
+                                    <div class="lk-data__group">
+                                        <div class="lk-data__inner">
+                                            <span class="lk-data__help lk-data__help--grey">Инвойс №</span>
+                                            <span class="lk-data__help">34312354</span>
+                                        </div>
+                                    </div>
+                                    <div class="lk-data__group">
+                                        <div class="lk-data__inner">
+                                            <span class="lk-data__help lk-data__help--grey">Дата</span>
+                                            <span class="lk-data__help">12.06.2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lk-data__extra">
+                                    <a href="#" class="download-btn">
+                                        <svg class="download-btn__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-pdf"></use>
+                                        </svg>
+                                        <span>Скачать в .pdf</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lk-data__wrapper">
+                                <div class="lk-data__main">
+                                    <div class="lk-data__group">
+                                        <div class="lk-data__inner">
+                                            <span class="lk-data__help lk-data__help--grey">От</span>
+                                            <span class="lk-data__help">Tkachenko Kristina A.</span>
+                                        </div>
+                                        <div class="lk-data__inner">
+                                            <span class="lk-data__help lk-data__help--grey">Перевод</span>
+                                            <span class="lk-data__help">**** **** **** 1112</span>
+                                        </div>
+                                        <div class="lk-data__inner">
+                                            <span class="lk-data__help lk-data__help--grey">№ трнанз.</span>
+                                            <span class="lk-data__help">12232-23123-12</span>
+                                        </div>
+                                        <div class="lk-data__inner">
+                                            <span class="lk-data__help lk-data__help--grey">Телефон</span>
+                                            <span class="lk-data__help">800 123-45-67</span>
+                                        </div>
+                                        <div class="lk-data__inner">
+                                            <span class="lk-data__help lk-data__help--grey">e-mail</span>
+                                            <span class="lk-data__help">tak4enko.kris@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="lk-data__group">
+                                        <div class="lk-data__inner">
+                                            <span class="lk-data__help lk-data__help--grey">Кому</span>
+                                            <span class="lk-data__help">Askgermandoc.ltd</span>
+                                        </div>
+                                        <div class="lk-data__inner">
+                                            <span class="lk-data__help lk-data__help--grey">юр. Адрес</span>
+                                            <span class="lk-data__help">1488, Берлин. Германия</span>
+                                        </div>
+                                        <div class="lk-data__inner">
+                                            <span class="lk-data__help lk-data__help--grey">счет №</span>
+                                            <span class="lk-data__help">12232-23123-12</span>
+                                        </div>
+                                        <div class="lk-data__inner">
+                                            <span class="lk-data__help lk-data__help--grey">Телефон</span>
+                                            <span class="lk-data__help">800 123-45-67</span>
+                                        </div>
+                                        <div class="lk-data__inner">
+                                            <span class="lk-data__help lk-data__help--grey">e-mail</span>
+                                            <span class="lk-data__help">ask.german.doc@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk-table lk__table">
+                            <div class="lk-table__group">
+                                <span class="lk-table__elem lk-table__elem--grey">№</span>
+                                <span class="lk-table__elem">1</span>
+                            </div>
+                            <div class="lk-table__group">
+                                <span class="lk-table__elem lk-table__elem--grey">Название услуги</span>
+                                <span class="lk-table__elem">Письменное второе мнение + видеоконсультация</span>
+                            </div>
+                            <div class="lk-table__group">
+                                <span class="lk-table__elem lk-table__elem--grey">Стоимотсь</span>
+                                <span class="lk-table__elem"><b>449.00 €</b></span>
+                            </div>
+                            <div class="lk-table__group">
+                                <span class="lk-table__elem lk-table__elem--grey">Итоговая стоимость</span>
+                                <span class="lk-table__elem"><b>449.00 €</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="lk__footer">
+                        <p class="lk__copyright">© 2021 AskGermanDoc.com.  Все права защищены</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of personal area -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

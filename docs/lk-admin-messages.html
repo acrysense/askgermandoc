@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>AskGermanDoc - Консультации</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body class="scroll-disabled">
+    <!-- personal area -->
+    <div class="lk">
+        <div class="lk__wrap">
+            <div class="lk__overlay" id="lk-overlay"></div>
+            <div class="lk__left" id="lk-menu">
+                <div class="lk__topmenu">
+                    <button class="lk-close" id="lk-close" aria-label="Закрыть">
+                        <span class="lk-close__inner"></span>
+                        <span class="lk-close__inner"></span>
+                        <span class="lk-close__inner"></span>
+                    </button>
+                    <a href="#" class="logotype lk__logotype">
+                        <img src="img/dist/logotype-admin.png" alt="AskGermanDoc">
+                    </a>
+                </div>
+                <div class="c-lk-profile lk__mobile-profile">
+                    <div class="c-lk-profile__group">
+                        <h3 class="c-lk-profile__name">Андрей Андреенко</h3>
+                        <a href="#" class="c-lk-profile__link">Админ</a>
+                    </div>
+                    <picture class="c-lk-profile__img">
+                        <img src="img/dist/sprite.svg#icon-user" alt="Image">
+                    </picture>
+                </div>
+                <nav class="lk-nav lk__nav">
+                    <ul class="lk-nav__list">
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="#" class="lk-nav__link">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-user"></use>
+                                    </svg>
+                                    <span>Профиль</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="lk-admin-notification.html" class="lk-nav__link lk-nav__link--notification">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-user"></use>
+                                    </svg>
+                                    <span>Уведомления</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="#" class="lk-nav__link">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-profiles"></use>
+                                    </svg>
+                                    <span>Профили врачей</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="lk-admin-consultation.html" class="lk-nav__link lk-nav__link--notification">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-time"></use>
+                                    </svg>
+                                    <span>Текущие консультации</span>
+                                </a>
+                                <ul class="lk-submenu lk-nav__submenu">
+                                    <li class="lk-submenu__item lk-submenu__item--active">
+                                        <a href="#" class="lk-submenu__link">
+                                            <span>23456 от 17.10.2021</span>
+                                            <svg class="lk-submenu__icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-video"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="lk-submenu__item">
+                                        <a href="#" class="lk-submenu__link">
+                                            <span>23456 от 17.10.2021</span>
+                                            <svg class="lk-submenu__icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-chat-fill"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="lk-submenu__item">
+                                        <a href="#" class="lk-submenu__link">
+                                            <span>23456 от 17.10.2021</span>
+                                            <svg class="lk-submenu__icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-chat-fill"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="#" class="lk-nav__link">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-calendar"></use>
+                                    </svg>
+                                    <span>Прошедшие</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="lk-nav__item lk-nav__item--active">
+                            <div class="lk-nav__elem">
+                                <a href="lk-admin-messages.html" class="lk-nav__link lk-nav__link--notification">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-chat"></use>
+                                    </svg>
+                                    <span>Сообщения</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="lk-nav__list">
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="#" class="lk-nav__link">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-exit"></use>
+                                    </svg>
+                                    <span>Выйти</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="lk__right">
+                <div class="lk__top lk__top--main">
+                    <div class="lk__group">
+                        <button class="lk-hamburger" id="lk-hamburger-toggle" aria-label="Меню">
+                            <span class="lk-hamburger__inner"></span>
+                            <span class="lk-hamburger__inner"></span>
+                            <span class="lk-hamburger__inner"></span>
+                        </button>
+                        <h1 class="lk__heading">Консультации</h1>
+                    </div>
+                    <div class="lk__group">
+                        <div class="c-notification lk__notification-bell">
+                            <svg class="c-notification__icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-notification-bell"></use>
+                            </svg>
+                            <span class="c-notification__value">3</span>
+                        </div>
+                        <div class="c-lk-profile lk__profile">
+                            <div class="c-lk-profile__group">
+                                <h3 class="c-lk-profile__name">Андрей Андреенко</h3>
+                                <a href="#" class="c-lk-profile__link">Админ</a>
+                            </div>
+                            <picture class="c-lk-profile__img">
+                                <img src="img/dist/sprite.svg#icon-user" alt="Image">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="lk__container">
+                    <div class="lk__block-data">
+                        <div class="lk__inner lk__inner--flex">
+                            <h3 class="lk__title">Все уведомления</h3>
+                        </div>
+                        <div class="lk-table-row lk__table-row">
+                            <div class="lk-table-row__item lk-table-row__item--notification lk-table-row__item--active">
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        <b>12.06.2021 19:39</b>
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        Новое сообщение от пациента <a href="#">Кристина Ткаченко</a>
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        “Не могу загрузить файл для врача, ошибка загрузки”
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        только что
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="lk-table-row__item lk-table-row__item--notification">
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        <b>12.06.2021 19:39</b>
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        Новое сообщение от пациента <a href="#">Кристина Ткаченко</a>
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        “Не могу загрузить файл для врача, ошибка загрузки”
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        ожидает ответа
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="lk-table-row__item lk-table-row__item--disabled">
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        <b>12.06.2021 19:39</b>
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        Новое сообщение от пациента <a href="#">Кристина Ткаченко</a>
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        “Не могу загрузить файл для врача, ошибка загрузки”
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        закрыто
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="lk-table-row__item lk-table-row__item--disabled">
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        <b>12.06.2021 19:39</b>
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        Новое сообщение от пациента <a href="#">Кристина Ткаченко</a>
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        “Не могу загрузить файл для врача, ошибка загрузки”
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        закрыто
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="lk-table-row__item lk-table-row__item--disabled">
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        <b>12.06.2021 19:39</b>
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        Новое сообщение от пациента <a href="#">Кристина Ткаченко</a>
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        “Не могу загрузить файл для врача, ошибка загрузки”
+                                    </span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">
+                                        закрыто
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="lk__footer">
+                        <p class="lk__copyright">© 2021 AskGermanDoc.com.  Все права защищены</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of personal area -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

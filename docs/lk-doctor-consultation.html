@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>AskGermanDoc - Консультации</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body class="scroll-disabled">
+    <!-- personal area -->
+    <div class="lk">
+        <div class="lk__wrap">
+            <div class="lk__overlay" id="lk-overlay"></div>
+            <div class="lk__left" id="lk-menu">
+                <div class="lk__topmenu">
+                    <button class="lk-close" id="lk-close" aria-label="Закрыть">
+                        <span class="lk-close__inner"></span>
+                        <span class="lk-close__inner"></span>
+                        <span class="lk-close__inner"></span>
+                    </button>
+                    <a href="#" class="logotype lk__logotype">
+                        <img src="img/dist/logotype-white.png" alt="AskGermanDoc">
+                    </a>
+                </div>
+                <div class="c-lk-profile lk__mobile-profile">
+                    <div class="c-lk-profile__group">
+                        <h3 class="c-lk-profile__name">Winfried Stöcker</h3>
+                        <a href="#" class="c-lk-profile__link">zum Profil gehen</a>
+                    </div>
+                    <picture class="c-lk-profile__img">
+                        <img src="img/dist/sprite.svg#icon-user" alt="Image">
+                    </picture>
+                </div>
+                <nav class="lk-nav lk__nav">
+                    <ul class="lk-nav__list">
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="lk-doctor.html" class="lk-nav__link">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-user"></use>
+                                    </svg>
+                                    <span>Persönliche Daten</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="lk-nav__item lk-nav__item--delimiter lk-nav__item--active">
+                            <div class="lk-nav__elem">
+                                <a href="lk-doctor-consultation.html" class="lk-nav__link lk-nav__link--notification">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-time"></use>
+                                    </svg>
+                                    <span>Tatsächliche Beratungen</span>
+                                </a>
+                                <ul class="lk-submenu lk-nav__submenu">
+                                    <li class="lk-submenu__item lk-submenu__item--active lk-submenu__item--current">
+                                        <a href="#" class="lk-submenu__link">
+                                            <span>23456 von 17.10.2021</span>
+                                            <svg class="lk-submenu__icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-video"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="lk-submenu__item">
+                                        <a href="#" class="lk-submenu__link">
+                                            <span>23456 von 17.10.2021</span>
+                                            <svg class="lk-submenu__icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-chat-fill"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="lk-submenu__item">
+                                        <a href="#" class="lk-submenu__link">
+                                            <span>23456 von 17.10.2021</span>
+                                            <svg class="lk-submenu__icon">
+                                                <use xlink:href="img/dist/sprite.svg#icon-chat-fill"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="#" class="lk-nav__link">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-calendar"></use>
+                                    </svg>
+                                    <span>Persönliche Daten</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="#" class="lk-nav__link">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-finance"></use>
+                                    </svg>
+                                    <span>Finanzen</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="#" class="lk-nav__link">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-chat"></use>
+                                    </svg>
+                                    <span>Kontakt</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="lk-nav__list">
+                        <li class="lk-nav__item">
+                            <div class="lk-nav__elem">
+                                <a href="#" class="lk-nav__link">
+                                    <svg class="lk-nav__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-exit"></use>
+                                    </svg>
+                                    <span>Abmelden</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="lk__right">
+                <div class="lk__top lk__top--main lk__top--start">
+                    <div class="lk__top-inner">
+                        <div class="lk__group lk__group--start">
+                            <button class="lk-hamburger" id="lk-hamburger-toggle" aria-label="Меню">
+                                <span class="lk-hamburger__inner"></span>
+                                <span class="lk-hamburger__inner"></span>
+                                <span class="lk-hamburger__inner"></span>
+                            </button>
+                            <div class="lk__group lk__group--wrap">
+                                <h1 class="lk__heading lk__heading--mobile">Persönliche Daten</h1>
+                                <h1 class="lk__heading lk__heading--desktop">
+                                    <span class="lk__heading--text">Beratungen 23456 von 17.10.2021</span>
+                                    <svg class="lk__heading--icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-video"></use>
+                                    </svg>
+                                </h1>
+                                <h1 class="lk__heading lk__heading--desktop">
+                                    <svg class="lk__heading--icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-time"></use>
+                                    </svg>
+                                    <span class="lk__heading--text">
+                                        übrige Zeit 
+                                    </span>
+                                    <span class="lk__heading--text">
+                                        2 <span class="grey">MI</span> <b>:</b> 18 <span class="grey">Std</span>
+                                    </span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="lk__group">
+                            <div class="c-notification lk__notification-bell">
+                                <svg class="c-notification__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-notification-bell"></use>
+                                </svg>
+                                <span class="c-notification__value">3</span>
+                            </div>
+                            <div class="c-lk-profile lk__profile">
+                                <div class="c-lk-profile__group">
+                                    <h3 class="c-lk-profile__name">Winfried Stöcker</h3>
+                                    <a href="#" class="c-lk-profile__link">zum Profil gehen</a>
+                                </div>
+                                <picture class="c-lk-profile__img">
+                                    <img src="img/dist/sprite.svg#icon-user" alt="Image">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lk__top-inner lk__top-inner--mobile">
+                        <h1 class="lk__heading">
+                            <span class="lk__heading--text">Beratungen 23456 von 17.10.2021</span>
+                            <svg class="lk__heading--icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-video"></use>
+                            </svg>
+                        </h1>
+                        <h1 class="lk__heading">
+                            <svg class="lk__heading--icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-time"></use>
+                            </svg>
+                            <span class="lk__heading--text">
+                                übrige Zeit 
+                            </span>
+                            <span class="lk__heading--text">
+                                2 <span class="grey">MI</span> <b>:</b> 18 <span class="grey">Std</span>
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="lk__container">
+                    <div class="lk__block-data">
+                        <div class="lk__inner lk__inner--flex">
+                            <h3 class="lk__title lk__title--notification">Über den Patienten</h3>
+                            <a href="#" class="lk__btn btn btn--sm">zum Schluss gehen</a>
+                        </div>
+                        <div class="lk__main">
+                            <div class="lk-data">
+                                <div class="lk-data__wrapper">
+                                    <div class="lk-data__main">
+                                        <div class="lk-data__group">
+                                            <div class="lk-data__inner">
+                                                <span class="lk-data__help lk-data__help--grey">Name</span>
+                                                <span class="lk-data__help">Kristina</span>
+                                            </div>
+                                        </div>
+                                        <div class="lk-data__group">
+                                            <div class="lk-data__inner">
+                                                <span class="lk-data__help lk-data__help--grey">nachnamen</span>
+                                                <span class="lk-data__help">Tkachenko</span>
+                                            </div>
+                                        </div>
+                                        <div class="lk-data__group">
+                                            <div class="lk-data__inner lk-data__inner--fit">
+                                                <span class="lk-data__help lk-data__help--grey">Geburtsdatum</span>
+                                                <span class="lk-data__help">01.02.2001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lk__block-data">
+                        <div class="lk__inner lk__inner--flex">
+                            <h3 class="lk__title">Hochgeladene Dokumente (Original)</h3>
+                        </div>
+                        <div class="lk-table-row lk-table-row--shadow lk__table-row">
+                            <div class="lk-table-row__item lk-table-row__item--start">
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">№1</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">Результаты_общего_анализа_крови.docx</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">12.06.2021 19:39</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <a href="#" class="download-btn lk-table-row__btn">
+                                        <svg class="download-btn__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-pdf"></use>
+                                        </svg>
+                                        <span>Dokument herunterladen</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lk-table-row__item lk-table-row__item--start">
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">№2</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">Результаты_общего_анализа_крови.docx</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">12.06.2021 19:39</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <a href="#" class="download-btn lk-table-row__btn">
+                                        <svg class="download-btn__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-pdf"></use>
+                                        </svg>
+                                        <span>Dokument herunterladen</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lk-table-row__item lk-table-row__item--start">
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">№3</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">Результаты_общего_анализа_крови.docx</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">12.06.2021 19:39</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <a href="#" class="download-btn lk-table-row__btn">
+                                        <svg class="download-btn__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-pdf"></use>
+                                        </svg>
+                                        <span>Dokument herunterladen</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lk__block-data">
+                        <div class="lk__inner lk__inner--flex">
+                            <h3 class="lk__title">Hochgeladene Dokumente (Übersetzung)</h3>
+                        </div>
+                        <div class="lk-table-row lk-table-row--shadow lk__table-row">
+                            <div class="lk-table-row__item lk-table-row__item--start">
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">№1</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">Ergebnisse von_General_Analysis_blood.docx</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">12.06.2021 19:39</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <a href="#" class="download-btn lk-table-row__btn">
+                                        <svg class="download-btn__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-pdf"></use>
+                                        </svg>
+                                        <span>Dokument herunterladen</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lk-table-row__item lk-table-row__item--start">
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">№1</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">Ergebnisse von_General_Analysis_blood.docx</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">12.06.2021 19:39</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <a href="#" class="download-btn lk-table-row__btn">
+                                        <svg class="download-btn__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-pdf"></use>
+                                        </svg>
+                                        <span>Dokument herunterladen</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lk-table-row__item lk-table-row__item--start">
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">№1</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">Ergebnisse von_General_Analysis_blood.docx</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">12.06.2021 19:39</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <a href="#" class="download-btn lk-table-row__btn">
+                                        <svg class="download-btn__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-pdf"></use>
+                                        </svg>
+                                        <span>Dokument herunterladen</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lk__block-data">
+                        <div class="lk__inner lk__inner--flex">
+                            <h3 class="lk__title">Ihr Fazit</h3>
+                            <a href="#" class="lk__btn btn btn--sm">Dokument entladen</a>
+                            <span class="lk__help">Dateiformat: pdf, doc, docx, jpg, png. maximale Dateigröße 50 MB.</span>
+                        </div>
+                        <div class="lk-table-row lk-table-row--shadow lk__table-row">
+                            <div class="lk-table-row__item lk-table-row__item--start">
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">№1</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">Ergebnisse von_General_Analysis_blood.docx</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">12.06.2021 19:39</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <a href="#" class="download-btn lk-table-row__btn">
+                                        <svg class="download-btn__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-pdf"></use>
+                                        </svg>
+                                        <span>Dokument herunterladen</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lk-table-row__item lk-table-row__item--start">
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">№1</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">Ergebnisse von_General_Analysis_blood.docx</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">12.06.2021 19:39</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <a href="#" class="download-btn lk-table-row__btn">
+                                        <svg class="download-btn__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-pdf"></use>
+                                        </svg>
+                                        <span>Dokument herunterladen</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lk-table-row__item lk-table-row__item--start">
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">№1</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem">Ergebnisse von_General_Analysis_blood.docx</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <span class="lk-table-row__elem lk-table-row__elem--grey">12.06.2021 19:39</span>
+                                </div>
+                                <div class="lk-table-row__group">
+                                    <a href="#" class="download-btn lk-table-row__btn">
+                                        <svg class="download-btn__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-pdf"></use>
+                                        </svg>
+                                        <span>Dokument herunterladen</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk-publication lk-publication--center lk__publication">
+                            <div class="lk-publication__group">
+                                <span class="lk-publication__title">Zweitmeinung hochladen</span>
+                                <button class="lk-publication__btn btn">Datei hochladen</button>
+                                <p class="lk-publication__help">Dateiformat: pdf, doc, docx. maximale Dateigröße 50 MB.</p>
+                            </div>
+                            <div class="lk-publication__group">
+                                <span class="lk-publication__title">Videoberatung</span>
+                                <div class="c-data-info lk-publication__data">
+                                    <span class="c-data-info__text">17. November</span>
+                                    <svg class="c-data-info__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-calendar-plus"></use>
+                                    </svg>
+                                </div>
+                                <div class="c-data-info lk-publication__data">
+                                    <span class="c-data-info__text">18:00</span>
+                                    <svg class="c-data-info__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-clock"></use>
+                                    </svg>
+                                </div>
+                                <button class="lk-publication__btn btn btn--transparent">
+                                    <svg class="btn__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-video"></use>
+                                    </svg>
+                                    <span>zu ernennen</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="lk__footer">
+                        <p class="lk__copyright">© 2021 AskGermanDoc.com.  Все права защищены</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of personal area -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
