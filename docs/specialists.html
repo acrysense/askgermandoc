@@ -128,7 +128,7 @@
                         </ul>
                     </div>
                     <div class="specialists__right">
-                        <button class="specialists__filter" aria-label="Фильтр">Фильтры</button>
+                        <button class="specialists__filter" id="filter-toggle" aria-label="Фильтр">Фильтры</button>
                         <div class="specialists__top">
                             <div class="specialists__group specialists__group--buttons">
                                 <a href="#" class="specialists__btn round-btn round-btn--transparent">Писменное второе мнение</a>
@@ -211,6 +211,59 @@
             </div>
         </section>
         <!-- end of specialists -->
+        <!-- filters -->
+        <div class="filters" id="filters">
+            <div class="container">
+                <div class="filters__wrapper">
+                    <div class="filters__scroll">
+                        <div class="filters__top">
+                            <div class="filters__group">
+                                <span class="filters__help">Срок составления услуги:</span>
+                                <select class="filters__select select">
+                                    <option value="1">1 день</option>
+                                    <option value="2">2 дня</option>
+                                    <option value="3">3 дня</option>
+                                    <option value="4">4 дня</option>
+                                </select>
+                            </div>
+                            <a href="#" class="filters__btn round-btn">Письменное второе мнение</a>
+                            <a href="#" class="filters__btn round-btn round-btn--transparent">Видеоконсультация</a>
+                        </div>
+                        <div class="filters__main">
+                            <span class="filters__help">Направления:</span>
+                            <ul class="c-directions filters__list">
+                                <li class="c-directions__item c-directions__item--active">
+                                    <a href="#" class="c-directions__link">Ортопедия</a>
+                                </li>
+                                <li class="c-directions__item">
+                                    <a href="#" class="c-directions__link">Урология</a>
+                                </li>
+                                <li class="c-directions__item">
+                                    <a href="#" class="c-directions__link">Кардиология</a>
+                                </li>
+                                <li class="c-directions__item">
+                                    <a href="#" class="c-directions__link">Неврология</a>
+                                </li>
+                                <li class="c-directions__item">
+                                    <a href="#" class="c-directions__link">Эндокринология</a>
+                                </li>
+                                <li class="c-directions__item">
+                                    <a href="#" class="c-directions__link">Хирургия</a>
+                                </li>
+                                <li class="c-directions__item">
+                                    <a href="#" class="c-directions__link">Терапия</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filters__bottom">
+                            <button class="filters__btn btn">Применить</button>
+                            <button class="filters__close" id="filter-close">Скрыть</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of filters -->
         <!-- consultation -->
         <section class="consultation" id="consultation">
             <div class="container">
