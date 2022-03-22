@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="img/dist/favicon/favicon.ico" rel="shortcut icon">
+    <title>AskGermanDoc - Регистрация</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body class="scroll-disabled">
+    <!-- auth -->
+    <div class="auth" id="auth">
+        <div class="container">
+            <div class="auth__wrapper">
+                <div class="auth__top">
+                    <a href="#" class="logotype auth__logotype">
+                        <img src="img/dist/logotype.png" alt="AskGermanDoc">
+                    </a>
+                </div>
+                <div class="auth__main auth__main--fullscreen">
+                    <!-- progress is 6 stage: --first, --second, --third, --four, --fifth, --sixth -->
+                    <div class="auth__inner auth__inner--top c-progress c-progress--second">
+                        <h2 class="auth__heading">Заболевания</h2>
+                        <div class="c-stage">
+                            <span class="c-stage__primary">Шаг 3</span>
+                            <div class="c-stage__secondary">из 3</div>
+                        </div>
+                    </div>
+                    <form action="#" class="auth-form auth__form">
+                        <div class="auth-form__block">
+                            <span class="auth-form__subtitle">Обнаружены ли у Вас другие заболевания, либо были ли Вы прооперированы?</span>
+                            <div class="auth-form__checkboxes">
+                                <label for="auth-form-01" class="dot-checkbox dot-checkbox--sm auth-form__checkbox">
+                                    <input type="radio" id="auth-form-01" name="auth-form-01" class="dot-checkbox__input">
+                                    <span class="dot-checkbox__icon"></span>
+                                    <span class="dot-checkbox__label">Да</span>
+                                </label>
+                                <label for="auth-form-02" class="dot-checkbox dot-checkbox--sm auth-form__checkbox">
+                                    <input type="radio" id="auth-form-02" name="auth-form-01" class="dot-checkbox__input">
+                                    <span class="dot-checkbox__icon"></span>
+                                    <span class="dot-checkbox__label">Нет</span>
+                                </label>
+                            </div>
+                            <div class="input-control auth-form__group"> <!-- add class 'input-control--error' for visible error message -->
+                                <input type="text" class="input-control__input" placeholder="Какие заболевания обнаружены? Какие операции были проведены?">
+                                <span class="input-control__error">Значение указано некорректно</span>
+                            </div>
+                        </div>
+                        <div class="auth-form__block">
+                            <span class="auth-form__subtitle">Принимаете ли вы лекарства из-за других заболеваний?</span>
+                            <div class="auth-form__checkboxes">
+                                <label for="auth-form-03" class="dot-checkbox dot-checkbox--sm auth-form__checkbox">
+                                    <input type="radio" id="auth-form-03" name="auth-form-02" class="dot-checkbox__input">
+                                    <span class="dot-checkbox__icon"></span>
+                                    <span class="dot-checkbox__label">Да</span>
+                                </label>
+                                <label for="auth-form-04" class="dot-checkbox dot-checkbox--sm auth-form__checkbox">
+                                    <input type="radio" id="auth-form-04" name="auth-form-02" class="dot-checkbox__input">
+                                    <span class="dot-checkbox__icon"></span>
+                                    <span class="dot-checkbox__label">Нет</span>
+                                </label>
+                            </div>
+                            <div class="input-control auth-form__group"> <!-- add class 'input-control--error' for visible error message -->
+                                <input type="text" class="input-control__input" placeholder="Какие лекарства вы принимаете?">
+                                <span class="input-control__error">Значение указано некорректно</span>
+                            </div>
+                        </div>
+                        <div class="auth-form__block">
+                            <span class="auth-form__subtitle">Были ли обнаружены ортопедические заболевания у членов вашей семьи?</span>
+                            <div class="auth-form__checkboxes">
+                                <label for="auth-form-05" class="dot-checkbox dot-checkbox--sm auth-form__checkbox">
+                                    <input type="radio" id="auth-form-05" name="auth-form-03" class="dot-checkbox__input">
+                                    <span class="dot-checkbox__icon"></span>
+                                    <span class="dot-checkbox__label">Да</span>
+                                </label>
+                                <label for="auth-form-06" class="dot-checkbox dot-checkbox--sm auth-form__checkbox">
+                                    <input type="radio" id="auth-form-06" name="auth-form-03" class="dot-checkbox__input">
+                                    <span class="dot-checkbox__icon"></span>
+                                    <span class="dot-checkbox__label">Нет</span>
+                                </label>
+                            </div>
+                            <div class="input-control auth-form__group"> <!-- add class 'input-control--error' for visible error message -->
+                                <input type="text" class="input-control__input" placeholder="Какие заболевания и у какого члена семьи были обнаружены?">
+                                <span class="input-control__error">Значение указано некорректно</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="auth__bottom">
+                    <div class="auth__inner auth__inner--bottom auth__inner--center">
+                        <a href="register-3.html" class="auth__back">
+                            <svg class="auth__back-icon">
+                                <use xlink:href="img/dist/sprite.svg#icon-arrow-left"></use>
+                            </svg>
+                            <span>Назад</span>
+                        </a>
+                        <!--<button class="auth__btn btn">Далее</button>-->
+                        <a href="register-5.html" class="auth__btn btn">Далее</a> <!-- temp -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of auth -->
+    <!-- scripts -->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
