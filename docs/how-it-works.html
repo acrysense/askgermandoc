@@ -32,6 +32,7 @@
                         </ul>
                     </nav>
                     <div class="header__group">
+                        <a href="#" class="header__link round-btn modal-btn" data-id="back-call">Заказать звонок</a>
                         <a href="#" class="header__link">Login</a>
                         <a href="#" class="header__auth auth-btn">Регистрация</a>
                     </div>
@@ -48,47 +49,50 @@
     <!-- mobile menu -->
     <div class="mobile-menu" id="mobile-menu">
         <div class="container">
-            <div class="mobile-menu__wrapper">
-                <nav class="nav mobile-menu__nav">
-                    <ul class="nav__list">
-                        <li class="nav__item nav__item--active">
-                            <a href="#" class="nav__link">Специалисты</a>
+            <div class="mobile-menu__scroll">
+                <div class="mobile-menu__wrapper">
+                    <nav class="nav mobile-menu__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item nav__item--active">
+                                <a href="#" class="nav__link">Специалисты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Как это работает</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Что такое второе мнение</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="mobile-menu__back-call round-btn modal-btn" data-id="back-call">Заказать звонок</a>
+                    <div class="mobile-menu__group">
+                        <a href="#" class="mobile-menu__auth auth-btn">Регистрация</a>
+                        <a href="#" class="mobile-menu__link">Login</a>
+                    </div>
+                    <ul class="c-socials mobile-menu__socials">
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Как это работает</a>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Что такое второе мнение</a>
+                        <li class="c-socials__item">
+                            <a href="#" class="c-socials__link">
+                                <svg class="c-socials__icon">
+                                    <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </nav>
-                <div class="mobile-menu__group">
-                    <a href="#" class="mobile-menu__auth auth-btn">Регистрация</a>
-                    <a href="#" class="mobile-menu__link">Login</a>
                 </div>
-                <ul class="c-socials mobile-menu__socials">
-                    <li class="c-socials__item">
-                        <a href="#" class="c-socials__link">
-                            <svg class="c-socials__icon">
-                                <use xlink:href="img/dist/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="c-socials__item">
-                        <a href="#" class="c-socials__link">
-                            <svg class="c-socials__icon">
-                                <use xlink:href="img/dist/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="c-socials__item">
-                        <a href="#" class="c-socials__link">
-                            <svg class="c-socials__icon">
-                                <use xlink:href="img/dist/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
@@ -145,8 +149,8 @@
         <!-- end of main -->
         <!-- stage works -->
         <section class="stage-works" id="stage-works">
-            <div class="container">
-                <div class="stage-works__wrapper">
+            <div class="stage-works__wrapper">
+                <div class="container">
                     <div class="stage-works__item">
                         <div class="stage-works__image">
                             <picture class="stage-works__img">
@@ -189,42 +193,49 @@
                             <a href="#" class="stage-works__btn btn">Зарегистрироваться</a>
                         </div>
                     </div>
-                    <div class="stage-works__item">
-                        <div class="stage-works__image">
-                            <picture class="stage-works__img">
-                                <img src="img/dist/stage-works-04.png" alt="Image">
-                            </picture>
-                        </div>
+                </div>
+            </div>
+            <div class="stage-works__wrapper stage-works__wrapper--background">
+                <div class="container">
+                    <div class="stage-works__group">
+                        <h3 class="stage-works__heading">Дополнительные шаги</h3>
+                        <p class="stage-works__description">Cras sagittis. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo.</p>
+                    </div>
+                    <div class="stage-works__item stage-works__item--reverse">
                         <div class="stage-works__body">
                             <h4 class="stage-works__subtitle">Необязательно</h4>
-                            <h3 class="stage-works__title">Выкупить рецепт</h3>
+                            <h3 class="stage-works__title stage-works__title--static">Выкупить рецепт</h3>
                             <div class="content stage-works__content">
                                 <p>Если врач выписал вам рецепт, вы можете получить его напрямую через приложение. Лекарство будет бесплатно отправлено к  вам  домой, или вы можете забрать его в аптеке-партнере на месте.</p>
                             </div>
                             <a href="#" class="stage-works__btn btn">Зарегистрироваться</a>
                         </div>
+                        <div class="stage-works__image stage-works__image--sm">
+                            <picture class="stage-works__img">
+                                <img src="img/dist/stage-works-04.png" alt="Image">
+                            </picture>
+                        </div>
                     </div>
-                    <div class="stage-works__item stage-works__item--reverse">
+                    <div class="stage-works__item">
+                        <div class="stage-works__image stage-works__image--md">
+                            <picture class="stage-works__img">
+                                <img src="img/dist/stage-works-05.png" alt="Image">
+                            </picture>
+                        </div>
                         <div class="stage-works__body">
                             <h4 class="stage-works__subtitle">Необязательно</h4>
-                            <h3 class="stage-works__title">Управлять отпуском по болезни</h3>
+                            <h3 class="stage-works__title stage-works__title--static">Управлять отпуском по болезни</h3>
                             <div class="content stage-works__content">
                                 <p>Если врач выписал вам больничную, вы можете отправить ее своему работодателю прямо через приложение.</p>
                             </div>
                             <a href="#" class="stage-works__btn btn">Зарегистрироваться</a>
                         </div>
-                        <div class="stage-works__image">
-                            <picture class="stage-works__img">
-                                <img src="img/dist/stage-works-05.png" alt="Image">
-                            </picture>
-                        </div>
                     </div>
-                    <div class="stage-works__item">
-                        <div class="stage-works__image">
-                            <picture class="stage-works__img">
-                                <img src="img/dist/stage-works-06.png" alt="Image">
-                            </picture>
-                        </div>
+                </div>
+            </div>
+            <div class="stage-works__wrapper">
+                <div class="container">
+                    <div class="stage-works__item stage-works__item--reverse">
                         <div class="stage-works__body">
                             <h3 class="stage-works__title">Допущение затрат и оплаты</h3>
                             <div class="content stage-works__content">
@@ -236,6 +247,11 @@
                                 </p>
                             </div>
                             <a href="#" class="stage-works__btn btn">Зарегистрироваться</a>
+                        </div>
+                        <div class="stage-works__image">
+                            <picture class="stage-works__img">
+                                <img src="img/dist/stage-works-06.png" alt="Image">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -342,6 +358,30 @@
         </div>
     </footer>
     <!-- end of footer -->
+    <!-- modal -->
+    <div class="modal" id="back-call">
+        <div class="modal__wrapper">
+            <div class="modal__top">
+                <h3 class="modal__title">Обратный звонок</h3>
+                <p class="modal__description">Зполните все поля ниже и мы Вам перезвоним</p>
+            </div>
+            <form action="#" class="modal-form modal__form">
+                <input type="text" class="modal-form__input" placeholder="Введите Ваше имя">
+                <input type="tel" class="modal-form__input" inputmode="tel">
+                <div class="modal-form__bottom">
+                    <button class="modal-form__btn btn">Заказать звонок</button>
+                </div>
+            </form>
+        </div>
+        <button class="modal__close">
+            <svg class="modal__close-icon">
+                <use xlink:href="img/dist/sprite.svg#icon-arrow-left"></use>
+            </svg>
+            <span>Назад на главную</span>
+        </button>
+    </div>
+    <div class="modal-overlay"></div>
+    <!-- end of modal -->
     <!-- scripts -->
     <script src="js/vendor.min.js"></script>
     <script src="js/app.min.js"></script>
