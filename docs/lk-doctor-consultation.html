@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/app.min.css">
 </head>
-<body class="scroll-disabled">
+<body>
     <!-- personal area -->
     <div class="lk">
         <div class="lk__wrap">
@@ -201,7 +201,7 @@
                     <div class="lk__block-data">
                         <div class="lk__inner lk__inner--flex">
                             <h3 class="lk__title lk__title--notification">Über den Patienten</h3>
-                            <a href="#" class="lk__btn btn btn--sm">zum Schluss gehen</a>
+                            <a href="#publication-anchor" class="lk__btn btn btn--sm">zum Schluss gehen</a>
                         </div>
                         <div class="lk__main">
                             <div class="lk-data">
@@ -424,7 +424,63 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lk__block-data">
+                    <div class="lk__block-data" id="publication-anchor">
+                        <div class="lk-publication lk-publication--center lk__publication">
+                            <div class="lk-publication__group">
+                                <span class="lk-publication__title">Zweitmeinung hochladen</span>
+                                <button class="lk-publication__btn btn">Datei hochladen</button>
+                                <p class="lk-publication__help">Dateiformat: pdf, doc, docx. maximale Dateigröße 50 MB.</p>
+                            </div>
+                            <div class="lk-publication__group">
+                                <span class="lk-publication__title">Videoberatung</span>
+                                <div class="c-data-info lk-publication__data">
+                                    <svg class="c-data-info__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-calendar-plus"></use>
+                                    </svg>
+                                    <input type="text" class="c-data-info__input datepickr" placeholder="17. November" input="this.size = this.value.length + 1">
+                                </div>
+                                <div class="c-data-info lk-publication__data">
+                                    <svg class="c-data-info__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-clock"></use>
+                                    </svg>
+                                    <input type="text" class="c-data-info__input timepickr" placeholder="18:00">
+                                </div>
+                                <button class="lk-publication__btn btn btn--transparent">
+                                    <svg class="btn__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-video"></use>
+                                    </svg>
+                                    <span>zu ernennen</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="lk-publication lk-publication--center lk__publication">
+                            <div class="lk-publication__group">
+                                <span class="lk-publication__title">Zweitmeinung hochladen</span>
+                                <button class="lk-publication__btn btn">Datei hochladen</button>
+                                <p class="lk-publication__help">Dateiformat: pdf, doc, docx. maximale Dateigröße 50 MB.</p>
+                            </div>
+                            <div class="lk-publication__group">
+                                <span class="lk-publication__title">Videoberatung</span>
+                                <div class="c-data-info lk-publication__data">
+                                    <svg class="c-data-info__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-calendar-plus"></use>
+                                    </svg>
+                                    <input type="text" class="c-data-info__input datepickr" placeholder="17. November" input="this.size = this.value.length + 1">
+                                </div>
+                                <div class="c-data-info lk-publication__data">
+                                    <svg class="c-data-info__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-clock"></use>
+                                    </svg>
+                                    <input type="text" class="c-data-info__input timepickr" placeholder="18:00">
+                                </div>
+                                <button class="lk-publication__btn btn btn--transparent">
+                                    <svg class="btn__icon">
+                                        <use xlink:href="img/dist/sprite.svg#icon-video"></use>
+                                    </svg>
+                                    <span>zu ernennen</span>
+                                </button>
+                            </div>
+                        </div>
                         <div class="lk-publication lk-publication--center lk__publication">
                             <div class="lk-publication__group">
                                 <span class="lk-publication__title">Zweitmeinung hochladen</span>
